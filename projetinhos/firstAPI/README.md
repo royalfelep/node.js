@@ -8,7 +8,7 @@ A API é capaz de registrar, deletar, alterar e buscar produtos dentro de um ban
 
 ## Configurando a API:
 
-Para configurar a API, use o comando `npm i express` ou `yarn add express`. Em seguida, use o comando `npm start` ou `yarn start` para iniciar o servidor (`localhost:3000`).
+Para configurar a API, use o comando `npm i express` ou `yarn add express` para instalar as dependências. Em seguida, use o comando `npm start` ou `yarn start` para iniciar o servidor (`localhost:3000`).
 
 ## Usando a API:
 
