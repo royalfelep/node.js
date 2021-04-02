@@ -19,7 +19,10 @@ Para configurar a API, use o comando `npm i express` ou `yarn add express` para 
 
 ## Usando a API:
 
-Clique na imagem abaixo para conhecer o funcionamento da API.
+<p align=center> <b>Clique na imagem para assistir o vídeo explicativo<b> </p>
+<p align=center>
+<a href="https://youtu.be/F854-AS_KD0"> <img src="https://user-images.githubusercontent.com/73192682/113459564-4e4a7700-93ec-11eb-8299-a90480b6f85c.jpg" alt="Funcionamento da API"> </a>
+</p>
 
 ## Produtos para teste:
 
