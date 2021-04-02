@@ -1,7 +1,10 @@
 {
-  "name": "app.js",
+  "name": "firstapi",
   "version": "1.0.0",
+  "description": "API que registra, pesquisa e deleta produtos dentro de um banco de dados local, que é gerado automaticamente ao registrar o primeiro produto.",
   "main": "src/app.js",
+  "repository": "https://github.com/royalfelep/Node.js/tree/main/projetinhos/firstAPI",
+  "author": "Felipe da Cruz",
   "license": "MIT",
   "dependencies": {
     "express": "^4.17.1"
