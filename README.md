@@ -1,5 +1,5 @@
 # Node.js
-Arquivos pertinentes ao aprendizado de Node.js
+Arquivos pertinentes ao meu aprendizado de Node.js
 
 ## Conceitos
 Possui diversos arquivos e anotações pertinentes ao meu aprendizado de Node.js
