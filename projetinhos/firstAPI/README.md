@@ -3,6 +3,7 @@
 ## Sobre:
 
 Obs: Para testar a API, é necessário o uso do [Postman](https://www.postman.com/downloads/).
+
 A API é capaz de registrar, deletar, alterar e buscar produtos dentro de um banco de dados local, que é gerado automaticamente ao registrar o primeiro produto.
 
 ## Configurando a API:
