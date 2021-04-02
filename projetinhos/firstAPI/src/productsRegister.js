@@ -1,51 +1,60 @@
 const fs = require("fs");
 const localdb = __dirname + "/localdb.json";
-
-const generateId = {
-    _id: 1,
-    get nextId() {
-        return this._id++;
-    },
-};
+const productsList = {};
+const generateId = { _id: 1 }
 
 function updateLocalDB() {
     fs.writeFile(localdb, JSON.stringify(productsList), "utf-8", (err) => {
         if (err) throw err;
-        else console.log("Alteração feita com sucesso.");
+        else console.log("Localdb changes saved.");
     });
 }
 
-const productsList = {};
-
 function generateProduct(obj) {
-    if (!obj.id) {
-        obj.id = generateId.nextId;
+    if (obj.id == undefined) {
+        //console.log(`before: ${generateId._id}`)
+        obj.id = generateId._id
+        productsList[obj.id] = obj;
+        generateId._id = Object.keys(productsList).length + 1
+        //console.log(`after: ${generateId._id}`)
+        updateLocalDB();
+        return `New product created successfully!`;
+    }
+    else return `New product creation failed.`
+}
+
+function updateProduct(obj) {
+    if (obj.id) {
+        console.log(obj.id)
         productsList[obj.id] = obj;
         updateLocalDB();
-        return `Produto criado com sucesso!\n${obj}`;
-    }
+        return `Product ${obj.id} updated successfully!`;
+    } else `Invalid Product ID.`
 }
 
 function deleteProduct(id) {
-    const deletedProduct = productsList[id];
-    delete productsList[id];
-    updateLocalDB();
-    return `Produto deletado com sucesso!\n${deletedProduct}`;
+    if (id) {
+        generateId._id = id
+        delete productsList[id];
+        updateLocalDB();
+        return `Product id(${id}) deleted successfully!`;
+    } else `Invalid Product ID.`
 }
 
 function getProduct(id) {
-    return productsList.id;
+    if (productsList[id]) return productsList[id];
+    else return `Invalid Product ID.`
 }
 
 function getAllProducts() {
-    return productsList;
+    if (Object.keys(productsList).length === 0) return `Empty list.`
+    else return productsList;
 }
-
-generateProduct({ obj: "oloco" });
 
 module.exports = {
     generateProduct,
+    updateProduct,
     deleteProduct,
-    generateProduct,
-    getAllProducts,
+    getProduct,
+    getAllProducts
 };
