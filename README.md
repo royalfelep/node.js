@@ -1,4 +1,4 @@
-# <img src="https://user-images.githubusercontent.com/73192682/113967621-b8598680-9807-11eb-8125-668ccaa5dff2.png" width="30" height="30"> Node.js
+# <img src="https://user-images.githubusercontent.com/73192682/113967744-02db0300-9808-11eb-801a-69e067d9c0f0.png" width="25" height="27"> Node.js
 Arquivos pertinentes ao meu aprendizado de Node.js
 
 ## [Conceitos](https://github.com/royalfelep/Node.js/tree/main/conceitos)
