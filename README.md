@@ -4,7 +4,7 @@ Arquivos pertinentes ao meu aprendizado de Node.js
 ## [Conceitos](https://github.com/royalfelep/Node.js/tree/main/conceitos)
 Possui diversos arquivos e anotações pertinentes ao meu aprendizado de Node.js
 
-## [API's](https://github.com/royalfelep/Node.js/tree/main/projetinhos/)
+## [API's](https://github.com/royalfelep/Node.js/tree/main/APIs)
 Possui algumas API's criadas para exercitar o que aprendi.
 
 ### 1. [Minha primeira API REST](https://github.com/royalfelep/Node.js/tree/main/APIs/firstAPI)
