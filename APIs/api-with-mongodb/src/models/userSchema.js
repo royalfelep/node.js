@@ -9,13 +9,13 @@ const UserSchema = new mongoose.Schema({
         type: String,
         require: true,
     },
-    num: {
+    number: {
         type: String,
         require: true,
     },
     date: {
         type: Date,
-        default: new Date().toLocaleString(),
+        default: new Date(),
     }
 })
 
