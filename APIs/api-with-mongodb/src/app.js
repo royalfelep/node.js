@@ -1,15 +1,22 @@
+// Imports/Consts
 const express = require('express')
-const mongoose = require('mongoose')
 const app = express()
-const cadastroRoute = require('./routes/cadastro')
+const db_init = require('./database/db')
 
-//'----------------------------------------------'
-
+// Configs
 app.use(express.json())
 app.use(express.urlencoded({ extended: true }))
 
-//'----------------------------------------------'
+// routes
+const cadastrosRoute = require('./routes/cadastros')
+app.use('/cadastros', cadastrosRoute)
 
-app.use('/cadastro', cadastroRoute)
+app.use('/', (req, res) => {
+    res.send('<h1>Página Principal<h1>')
+})
 
+// Database
+db_init()
+
+// Start Server
 app.listen(process.env.PORT || 3000)
